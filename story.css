@@ -1,0 +1,21 @@
+form .records input[type="text"]{
+    border: none;
+    text-align: center;
+    background: transparent;
+}
+
+.displayBlogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.displayBlogs input[type="text"]{
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    border: none;
+}
