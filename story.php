@@ -42,6 +42,12 @@
 </html>
 ";
     }
+if(isset($_SESSION['views'])){
+    $_SESSION['views'] = $_SESSION['views'] + 1;
+}
+else{
+    $_SESSION['views'] = 1;
+}
 $u = isset($_SESSION["username"]);
 if($u){
     $user = $_SESSION["username"];
@@ -55,10 +61,5 @@ if($u){
     echo "<br>";
     echo "<a href='displayStories.php'><h2>< Go Back To View More/Logout?</a>";
 }
-if(isset($_SESSION['views'])){
-    $_SESSION['views'] = $_SESSION['views'] + 1;
-}
-else{
-    $_SESSION['views'] = 1;
-}
+
 ?>
