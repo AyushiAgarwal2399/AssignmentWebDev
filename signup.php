@@ -9,11 +9,11 @@
     $username = $_POST["username"];
     $sql = "INSERT INTO loginsystem VALUES ('$fname', '$lname', '$pass', '$username')";
     if(mysqli_query($link, $sql)){
-        echo "New Record created successfully";
+        
         header('Location: login.html');
     }
     else{
-        echo "Error".mysqli.error($link);
+        echo "Error".mysqli_error($link);
     }
 
 ?>
